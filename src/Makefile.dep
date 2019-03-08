@@ -1,0 +1,19 @@
+definition.o: definition.cc definition.hh symbol.hh defs.hh exception.hh \
+  expression.hh value.hh qubit.hh qml.hh qusim.hh functional.hh \
+  statement.hh
+expression.o: expression.cc expression.hh symbol.hh defs.hh exception.hh \
+  value.hh qubit.hh qml.hh qusim.hh functional.hh definition.hh \
+  statement.hh
+qcl.o: qcl.cc qcl.tab.c qcl.hh exception.hh qml.hh qusim.hh statement.hh \
+  defs.hh symbol.hh expression.hh value.hh qubit.hh functional.hh \
+  definition.hh lex.qcl.c qcl.tab.h
+qml.o: qml.cc qml.hh qusim.hh
+qubit.o: qubit.cc qubit.hh qml.hh qusim.hh
+qusim.o: qusim.cc qusim.hh
+statement.o: statement.cc definition.hh symbol.hh defs.hh exception.hh \
+  expression.hh value.hh qubit.hh qml.hh qusim.hh functional.hh \
+  statement.hh
+symbol.o: symbol.cc symbol.hh defs.hh exception.hh expression.hh value.hh \
+  qubit.hh qml.hh qusim.hh functional.hh
+value.o: value.cc value.hh symbol.hh defs.hh exception.hh qubit.hh qml.hh \
+  qusim.hh

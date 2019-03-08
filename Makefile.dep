@@ -1,0 +1,3 @@
+qcl2qml: qcl2qml.cc src/qcl.hh src/exception.hh src/qml.hh \
+  src/statement.hh src/defs.hh src/symbol.hh src/expression.hh \
+  src/value.hh src/qubit.hh src/functional.hh src/definition.hh

@@ -1,0 +1,13 @@
+qureg a[2];
+qureg b[1];
+qureg c[1];
+qureg d[2];
+int i;
+
+set(3,a);
+H(a);
+Swap(b,c);
+CNot(a,d);
+for i = 1 to 3 {
+    Swap(d,a);
+}
